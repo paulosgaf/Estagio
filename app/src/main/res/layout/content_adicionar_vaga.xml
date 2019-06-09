@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AdicionarVaga"
+    tools:showIn="@layout/app_bar_adicionar_vaga">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- EMPRESA -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@color/grey"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/blue"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/empresa_icon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/predio" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Empresa"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                </LinearLayout>
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:hint="Nome da Empresa"
+                    android:inputType="text"
+                    android:paddingLeft="15dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColorHint="#bbb"></EditText>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:hint="Nome do Responsável"
+                    android:inputType="text"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColorHint="#bbb"></EditText>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:hint="E-mail"
+                    android:inputType="text"
+                    android:paddingLeft="15dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColorHint="#bbb"></EditText>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:hint="(DD) XXXX-XXXX"
+                    android:inputType="text"
+                    android:paddingLeft="15dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColorHint="#bbb"></EditText>
+
+                <Spinner
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp" />
+
+                <Spinner
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp" />
+
+            </LinearLayout>
+
+            <!-- VAGA -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@color/grey"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/blue"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/perfil" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Vaga"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                </LinearLayout>
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:hint="Título da Vaga"
+                    android:inputType="text"
+                    android:paddingLeft="15dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColorHint="#bbb"></EditText>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp" />
+
+                    <Spinner
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:hint="Remuneração"
+                        android:inputType="number"
+                        android:paddingLeft="15dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColorHint="#bbb"></EditText>
+
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:hint="Horas Semanais"
+                        android:inputType="number"
+                        android:paddingLeft="15dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColorHint="#bbb"></EditText>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:hint="Endereço"
+                        android:inputType="number"
+                        android:paddingLeft="15dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColorHint="#bbb"></EditText>
+
+                    <EditText
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:hint="Número"
+                        android:inputType="number"
+                        android:paddingLeft="5dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColorHint="#bbb"></EditText>
+
+                    <EditText
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:hint="Compl."
+                        android:inputType="number"
+                        android:paddingLeft="5dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColorHint="#bbb"></EditText>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp" />
+
+                    <Spinner
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                    android:hint="Descrição"
+                    android:inputType="text"
+                    android:paddingLeft="15dp"
+                    android:paddingBottom="50dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColorHint="#bbb"></EditText>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                    android:hint="Requisitos"
+                    android:inputType="text"
+                    android:paddingLeft="15dp"
+                    android:paddingBottom="50dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColorHint="#bbb"></EditText>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                    android:hint="Benefícios"
+                    android:inputType="text"
+                    android:paddingLeft="15dp"
+                    android:paddingBottom="50dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColorHint="#bbb"></EditText>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:text="Salvar" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <!---Botão para ir aos favoritos-->
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:onClick="clicouFavorito"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/favorito" />
+
+    <!---Botão para ir aos mapas-->
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:onClick="clicouMapa"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton3"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintTop_toTopOf="@+id/imageButton"
+        app:srcCompat="@drawable/mapa" />
+
+    <!---Botão para ir a Lista de vagas-->
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:onClick="clicouVagas"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton2"
+        app:layout_constraintTop_toTopOf="@+id/imageButton2"
+        app:srcCompat="@drawable/vaga" />
+</android.support.constraint.ConstraintLayout>
