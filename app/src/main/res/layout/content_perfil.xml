@@ -7,6 +7,414 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".Perfil"
     tools:showIn="@layout/app_bar_perfil">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints"
+        android:layout_marginBottom="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Great"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+
+            <!-- EMPRESA -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@color/grey"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/blue"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="13dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/predio" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Dados da Empresa"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nome da Empresa"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Great"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nome do Responsável"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Paulo Sérgio"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="E-mail"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="great@gmail.com"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Número"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(85) 99999-9999"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Estado"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ceará"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cidade"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fortaleza"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Endereço"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ufc - Campus do Pici"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/grey_dark"
+                    android:text="Editar"/>
+
+            </LinearLayout>
+
+
+            <!-- VAGAS ADICIONADAS -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@color/grey"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/blue"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/perfil" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Vagas Adicionadas"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                </LinearLayout>
+
+
+
+                <!-- VAGA ADICIONADAS 1-->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/titulo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Bolsa de Engenharia de Software"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.SearchResult.Title" />
+
+                    <TextView
+                        android:id="@+id/nome_empresa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/titulo"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Great"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/cardview_dark_background" />
+
+                    <TextView
+                        android:id="@+id/remuneracao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/nome_empresa"
+                        android:layout_marginLeft="10dp"
+                        android:text="R$ 700"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+                    <TextView
+                        android:id="@+id/carga_horaria"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/nome_empresa"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@id/remuneracao"
+                        android:text="12h/sem"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+                    <TextView
+                        android:id="@+id/turno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/nome_empresa"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@id/carga_horaria"
+                        android:text="Manhã"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+                    <TextView
+                        android:id="@+id/tempo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/nome_empresa"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@id/turno"
+                        android:text="Há 1h"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+                    <ImageView
+                        android:id="@+id/selo"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_below="@+id/nome_empresa"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="30px"
+                        android:layout_toStartOf="@id/remuneracao"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/selo"
+                        android:layout_toLeftOf="@id/remuneracao" />
+
+                </RelativeLayout>
+
+                <!-- VAGA ADICIONADAS 1-->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/titulo2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Bolsa de Engenharia de Software"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.SearchResult.Title" />
+
+                    <TextView
+                        android:id="@+id/nome_empresa2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/titulo2"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Great"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/cardview_dark_background" />
+
+                    <TextView
+                        android:id="@+id/remuneracao2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/nome_empresa2"
+                        android:layout_marginLeft="10dp"
+                        android:text="R$ 700"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+                    <TextView
+                        android:id="@+id/carga_horaria2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/nome_empresa2"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@id/remuneracao2"
+                        android:text="12h/sem"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+                    <TextView
+                        android:id="@+id/turno2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/nome_empresa2"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@id/carga_horaria2"
+                        android:text="Manhã"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+                    <TextView
+                        android:id="@+id/tempo2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/nome_empresa2"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@id/turno2"
+                        android:text="Há 1h"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+                    <ImageView
+                        android:id="@+id/selo2"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_below="@+id/nome_empresa2"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="30px"
+                        android:layout_toStartOf="@id/remuneracao2"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/selo"
+                        android:layout_toLeftOf="@id/remuneracao2" />
+
+                </RelativeLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/grey_dark"
+                    android:text="Editar"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
     <!---Botão para ir aos favoritos-->
     <ImageButton
         android:id="@+id/imageButton"
